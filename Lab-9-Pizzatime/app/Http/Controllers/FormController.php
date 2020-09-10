@@ -10,10 +10,6 @@ class FormController extends Controller
         return view('orderPizza');
     }
 
-    public function orderDetails() {
-        return view('orderDetails');
-    }
-
     public function pizzaDetails() {
         $formData = request()->all();
         $cost = 0;
@@ -21,8 +17,10 @@ class FormController extends Controller
         return view('orderDetails', compact('formData', 'cost'));
     }
 
-    // public function confirmOrCancel() {
+    public function thankYou() {
+        $formData = request()->all();
 
-    // }
+        return view('thankYou', compact('formData'));
+    }
 
 }
