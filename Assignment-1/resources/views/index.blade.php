@@ -7,6 +7,12 @@
 </head>
 <body>
     ALLO
+    <select id="partyDrop">
+        @foreach ($parties as $par) 
+        <option value="{{$par->name}}">{{$par->name}}   
+        @endforeach
+    </select>
+
     
     <table>
     <h2>Politicians</h2>
@@ -16,9 +22,9 @@
     <td>{{$pol->gender}}</td>
     <td>{{$pol->rank}}</td>
     <td>{{$pol->electorate}}</td>
-    <td>{{$pol->image}}</td>
+    <td><a href="/{{$pol->image}}"></a></td>
+    <td><img src="{{asset($pol->image)}}" style="width:250px; Height:100px"></td>
     <td>{{$pol->party->name}}</td>
-    <td>{{$pol->image}}</td>
     </tr>
     @endforeach
     </table>

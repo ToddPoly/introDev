@@ -15,11 +15,16 @@ class politiciansTableSeeder extends Seeder
     public function run()
     {
         DB::table('politicians')->insert([
-            ['name'=>'Jasper', 'gender'=>'', 'rank'=>'', 'electorate'=>'', 'image'=>'2010-01-20', 'party_id'=>'2', ],
-            ['name'=>'Wag',    'gender'=>'', 'rank'=>'', 'electorate'=>'', 'image'=>'1930-01-20', 'party_id'=>'3', ],
-            ['name'=>'Teddy',  'gender'=>'', 'rank'=>'', 'electorate'=>'', 'image'=>'2018-01-30', 'party_id'=>'1', ],
-            ['name'=>'Scout',  'gender'=>'', 'rank'=>'', 'electorate'=>'', 'image'=>'2015-03-12', 'party_id'=>'2', ],
-            ['name'=>'Honey',  'gender'=>'', 'rank'=>'', 'electorate'=>'', 'image'=>'2009-01-02', 'party_id'=>'1', ],
+            ['name'=>'David Seymour', 'gender'=>'Male', 'rank'=>'Leader', 'Electorate'=>"Epsom",'image'=>'img/David-Seymour.jpg', 'party_ID'=> 1],
+            ['name'=>'Chris Baillie ', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Wellington Central",'image'=>'img\Chris-Baillie.jpg', 'party_ID'=> 1],
+            ['name'=>'Chloe Swarbrick', 'gender'=>'Female', 'rank'=>'MP', 'Electorate'=>"Auckland Central",'image'=>'img\Chloe-Swarbrick.jpg', 'party_ID'=> 2],
+            ['name'=>'Golriz Ghahraman', 'gender'=>'Female', 'rank'=>'MP', 'Electorate'=>"Mount Roskill",'image'=>'img\Golriz-Ghahraman.jpg', 'party_ID'=> 2],
+            ['name'=>'Jacinda Ardern', 'gender'=>'Female', 'rank'=>'Leader', 'Electorate'=>"Mount Albert",'image'=>'img\Jacinda-Ardern.jpg', 'party_ID'=> 3],
+            ['name'=>'Kelvin Davis', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Te Tai Tonga",'image'=>'img\Rino-Tirikatane.jpg', 'party_ID'=> 3],
+            ['name'=>'Judith Collins', 'gender'=>'Female', 'rank'=>'Leader', 'Electorate'=>"Papkura",'image'=>'img\Judith_Collins.jpg', 'party_ID'=> 4],
+            ['name'=>'Todd Muller', 'gender'=>'Male', 'rank'=>'MP', 'Electorate'=>"Bay of Plenty",'image'=>'img\Todd-Muller.jpg', 'party_ID'=> 4],
+            ['name'=>'Winston Peters', 'gender'=>'Male', 'rank'=>'Leader', 'Electorate'=>"Northland",'image'=>'img\Winston_Peters.jpg', 'party_ID'=> 5],
+            ['name'=>'Ron Mark', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Rotorua",'image'=>'img\Ron_Mark.jpg', 'party_ID'=> 5]
         ]);
     }
 }
