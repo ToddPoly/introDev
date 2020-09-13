@@ -7,14 +7,18 @@
 </head>
 <body>
 
-    <table>
-        @foreach($polQuery as $p)​
-        <tr>
-        <td>{{$p->name}}</td>
-        <td>{{$p->id}}</td>
-        </tr>       
-        @endforeach
-    </table>
+    <h1>Search</h1>
+    <form action="search" method="POST">
+    {{csrf_field()}}
+    <p>Please Select a party to view</p>
+        <select id="partyDrop" name="partyDrop">
+            <option value='0'>All Parties</option> 
+            @foreach ($parties as $par) 
+            <option value="{{$par->id}}">{{$par->name}}</option>
+            @endforeach
+        </select>
+        <button type="submit">submit</button>
+    </form>
 
     <table>
         <h2>Politicians</h2>
@@ -26,18 +30,7 @@
         <td>{{$pol->electorate}}</td>
         <td><img src="{{asset($pol->image)}}" style="width:250px; Height:100px"></td>
         <td>{{$pol->party->name}}</td>
-        </tr>
-        @endforeach
-    </table>
-
-    <br>
-
-    <table>
-        <h2>Parties</h2>
-        @foreach ($parties as $par)
-        <tr> 
-        <td>{{$par->name}}</td>
-        <td><img src="{{asset($par->image)}}" style="width:100px; Height:50px"></td>
+        <td><img src="{{asset($pol->party->image)}}" style="width:100px; Height:50px"></td>
         </tr>
         @endforeach
     </table>
