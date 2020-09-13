@@ -16,4 +16,18 @@ class PoliticianController extends Controller
 
         return view('index', compact('politicians', 'parties'));
     }
+
+    public function process() {
+        $politicians = Politician::all();
+        $parties = Party::all();
+        $formData = request()->id;
+
+        $polQuery = Politician::where('party_id', '=', 'formData')->orderBy('name')->get();
+
+        return view('display', compact('formData', 'politicians', 'parties', 'polQuery'));
+    }
+
+    public function display() {
+        return view('display');
+    }
 }

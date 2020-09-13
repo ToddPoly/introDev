@@ -15,3 +15,5 @@ use App\Http\Controllers;
 */
 
 Route::get('/', 'App\Http\Controllers\PoliticianController@index');
+Route::get('/display', 'App\Http\Controllers\PoliticianController@display');
+Route::post('/search', 'App\Http\Controllers\PoliticianController@process');
