@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>2020 Politicians</title>
 </head>
 <body>
 
@@ -28,9 +29,9 @@
         <td>{{$pol->gender}}</td>
         <td>{{$pol->rank}}</td>
         <td>{{$pol->electorate}}</td>
-        <td><img src="{{asset($pol->image)}}" style="width:250px; Height:100px"></td>
+        <td><img src="{{asset($pol->image)}}" style="width:250px; Height:150px"></td>
         <td>{{$pol->party->name}}</td>
-        <td><img src="{{asset($pol->party->image)}}" style="width:100px; Height:50px"></td>
+        <td><img src="{{asset($pol->party->image)}}" style="width:100px; Height:40px"></td>
         </tr>
         @endforeach
     </table>
