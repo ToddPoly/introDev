@@ -21,10 +21,10 @@ class politiciansTableSeeder extends Seeder
             ['name'=>'Golriz Ghahraman', 'gender'=>'Female', 'rank'=>'MP', 'Electorate'=>"Mount Roskill",'image'=>'img\Golriz-Ghahraman.jpg', 'party_ID'=> 2],
             ['name'=>'Jacinda Ardern', 'gender'=>'Female', 'rank'=>'Leader', 'Electorate'=>"Mount Albert",'image'=>'img\Jacinda-Ardern.jpg', 'party_ID'=> 3],
             ['name'=>'Kelvin Davis', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Te Tai Tonga",'image'=>'img\Rino-Tirikatane.jpg', 'party_ID'=> 3],
-            ['name'=>'Judith Collins', 'gender'=>'Female', 'rank'=>'Leader', 'Electorate'=>"Papkura",'image'=>'img\Judith_Collins.jpg', 'party_ID'=> 4],
+            ['name'=>'Judith Collins', 'gender'=>'Female', 'rank'=>'Leader', 'Electorate'=>"Papkura",'image'=>'img\Judith-Collins.jpg', 'party_ID'=> 4],
             ['name'=>'Todd Muller', 'gender'=>'Male', 'rank'=>'MP', 'Electorate'=>"Bay of Plenty",'image'=>'img\Todd-Muller.jpg', 'party_ID'=> 4],
-            ['name'=>'Winston Peters', 'gender'=>'Male', 'rank'=>'Leader', 'Electorate'=>"Northland",'image'=>'img\Winston_Peters.jpg', 'party_ID'=> 5],
-            ['name'=>'Ron Mark', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Rotorua",'image'=>'img\Ron_Mark.jpg', 'party_ID'=> 5]
+            ['name'=>'Winston Peters', 'gender'=>'Male', 'rank'=>'Leader', 'Electorate'=>"Northland",'image'=>'img\Winston-Peters.jpg', 'party_ID'=> 5],
+            ['name'=>'Ron Mark', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Rotorua",'image'=>'img\Ron-Mark.jpg', 'party_ID'=> 5]
         ]);
     }
 }
