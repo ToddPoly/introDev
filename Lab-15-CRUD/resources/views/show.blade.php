@@ -8,6 +8,9 @@
 <body>
 
     {{$contact->firstName}} {{$contact->lastName}} {{$contact->phone}}
+
+    <a href="{{ $contact->id }}/edit" class=button>Edit
+     
     
 </body>
 </html>

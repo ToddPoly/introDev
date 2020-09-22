@@ -14,6 +14,8 @@
         </a>
     </li>
     @endforeach
+
+    <button href="/contacts/edit" class ="button"></button>
     
 </body>
 </html>

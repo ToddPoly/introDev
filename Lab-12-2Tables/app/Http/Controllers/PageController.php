@@ -21,7 +21,7 @@ class PageController extends Controller
         $labradorRetrievers = Dog::where('breed_id', '=', 1)->orWhere('breed_id', '=', 3)->get();
         $retrievers = Dog::where('breed_id', '=', 3)->get();
         $oldDogs = Dog::where('date_of_birth', '<', '2010-1-1')->get();
-        $dogQuery = Dog::where('breed_id', '!=', 1)->orWhereNull('breed_id', '!=', 3)->orderBy('breed_id')->get();
+        $dogQuery = Dog::where('breed_id', '!=', 1)->where('breed_id', '!=', 3)->orderBy('breed_id')->get();
 
         return view('home', compact('dogList', 'breed', 'labradorRetrievers', 'breedNames', 'retrievers', 'oldDogs', 'dogQuery'));
     }
