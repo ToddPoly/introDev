@@ -11,15 +11,12 @@
         {{csrf_field()}}
         {{method_field('PATCH')}}
         <div>
-            <input type="text" name="firstName" value="{{contact->firstName}}" placeholder="{{contact->firstName}}">
-            <input type="text" name="lastName" value="{{contact->lastName}}" placeholder="{{contact->lastName}}">
-            <input type="text" name="phone" value="{{contact->phone}}" placeholder="{{contact->phone}}">
+            <input type="text" name="firstName" value="{{$contact->firstName}}" placeholder="{{$contact->firstName}}">
+            <input type="text" name="lastName" value="{{$contact->lastName}}" placeholder="{{$contact->lastName}}">
+            <input type="text" name="phone" value="{{$contact->phone}}" placeholder="{{$contact->phone}}">
         </div>
         <button type="submit" class="button">Update Contact</button>
-    </form>
-    
-
-   
+    </form>  
     
 </body>
 </html>

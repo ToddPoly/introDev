@@ -26,7 +26,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**
@@ -37,7 +37,15 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $contacts = new Contact();
+        $contacts->firstName = request('firstName');
+        $contacts->lastName = request('lastName');
+        $contacts->phone = request('phone');
+
+        $contacts->save();
+
+        $contacts = Contact::all();
+        return view('index', compact('contacts'));
     }
 
     /**
@@ -90,6 +98,8 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $contact = Contact::find($id);
+        $contact->delete();
+        return redirect('/contacts');
     }
 }

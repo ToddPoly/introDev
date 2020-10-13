@@ -15,7 +15,8 @@
     </li>
     @endforeach
 
-    <button href="/contacts/edit" class ="button"></button>
+    <a href="{{route('contacts.create')}}">Create a contact</a>
+
     
 </body>
 </html>
