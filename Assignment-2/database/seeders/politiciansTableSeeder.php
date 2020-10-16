@@ -15,16 +15,16 @@ class politiciansTableSeeder extends Seeder
     public function run()
     {
         DB::table('politicians')->insert([
-            ['name'=>'David Seymour', 'gender'=>'Male', 'rank'=>'Leader', 'Electorate'=>"Epsom",'image'=>'img/David-Seymour.jpg', 'party_ID'=> 1],
-            ['name'=>'Chris Baillie ', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Wellington Central",'image'=>'img\Chris-Baillie.jpg', 'party_ID'=> 1],
-            ['name'=>'Chloe Swarbrick', 'gender'=>'Female', 'rank'=>'MP', 'Electorate'=>"Auckland Central",'image'=>'img\Chloe-Swarbrick.jpg', 'party_ID'=> 2],
-            ['name'=>'Golriz Ghahraman', 'gender'=>'Female', 'rank'=>'MP', 'Electorate'=>"Mount Roskill",'image'=>'img\Golriz-Ghahraman.jpg', 'party_ID'=> 2],
-            ['name'=>'Jacinda Ardern', 'gender'=>'Female', 'rank'=>'Leader', 'Electorate'=>"Mount Albert",'image'=>'img\Jacinda-Ardern.jpg', 'party_ID'=> 3],
-            ['name'=>'Kelvin Davis', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Te Tai Tonga",'image'=>'img\Rino-Tirikatane.jpg', 'party_ID'=> 3],
-            ['name'=>'Judith Collins', 'gender'=>'Female', 'rank'=>'Leader', 'Electorate'=>"Papkura",'image'=>'img\Judith-Collins.jpg', 'party_ID'=> 4],
-            ['name'=>'Todd Muller', 'gender'=>'Male', 'rank'=>'MP', 'Electorate'=>"Bay of Plenty",'image'=>'img\Todd-Muller.jpg', 'party_ID'=> 4],
-            ['name'=>'Winston Peters', 'gender'=>'Male', 'rank'=>'Leader', 'Electorate'=>"Northland",'image'=>'img\Winston-Peters.jpg', 'party_ID'=> 5],
-            ['name'=>'Ron Mark', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Rotorua",'image'=>'img\Ron-Mark.jpg', 'party_ID'=> 5]
+            ['name'=>'David Seymour', 'gender'=>'Male', 'rank'=>'Leader', 'Electorate'=>"Epsom",'image'=>'img/David-Seymour.jpg', 'party_ID'=> 1, 'pollResult'=>1],
+            ['name'=>'Chris Baillie ', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Wellington Central",'image'=>'img\Chris-Baillie.jpg', 'party_ID'=> 1, 'pollResult'=>2],
+            ['name'=>'Chloe Swarbrick', 'gender'=>'Female', 'rank'=>'MP', 'Electorate'=>"Auckland Central",'image'=>'img\Chloe-Swarbrick.jpg', 'party_ID'=> 2, 'pollResult'=>3],
+            ['name'=>'Golriz Ghahraman', 'gender'=>'Female', 'rank'=>'MP', 'Electorate'=>"Mount Roskill",'image'=>'img\Golriz-Ghahraman.jpg', 'party_ID'=> 2, 'pollResult'=>4],
+            ['name'=>'Jacinda Ardern', 'gender'=>'Female', 'rank'=>'Leader', 'Electorate'=>"Mount Albert",'image'=>'img\Jacinda-Ardern.jpg', 'party_ID'=> 3, 'pollResult'=>5],
+            ['name'=>'Kelvin Davis', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Te Tai Tonga",'image'=>'img\Rino-Tirikatane.jpg', 'party_ID'=> 3, 'pollResult'=>6],
+            ['name'=>'Judith Collins', 'gender'=>'Female', 'rank'=>'Leader', 'Electorate'=>"Papkura",'image'=>'img\Judith-Collins.jpg', 'party_ID'=> 4, 'pollResult'=>7],
+            ['name'=>'Todd Muller', 'gender'=>'Male', 'rank'=>'MP', 'Electorate'=>"Bay of Plenty",'image'=>'img\Todd-Muller.jpg', 'party_ID'=> 4, 'pollResult'=>8],
+            ['name'=>'Winston Peters', 'gender'=>'Male', 'rank'=>'Leader', 'Electorate'=>"Northland",'image'=>'img\Winston-Peters.jpg', 'party_ID'=> 5, 'pollResult'=>9],
+            ['name'=>'Ron Mark', 'gender'=>'Male', 'rank'=>'Deputy Leader', 'Electorate'=>"Rotorua",'image'=>'img\Ron-Mark.jpg', 'party_ID'=> 5, 'pollResult'=>10]
         ]);
     }
 }

@@ -9,8 +9,11 @@ use Illuminate\Support\Facades\DB;
 
 class PoliticianController extends Controller
 {
-    public function index()
-    {
+    public function home() {
+        return view('home');
+    }
+
+    public function index() {
         $politicians = Politician::all();
         $parties = Party::all();
 

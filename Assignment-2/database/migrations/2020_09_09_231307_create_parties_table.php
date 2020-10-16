@@ -17,6 +17,7 @@ class CreatePartiesTable extends Migration
             $table->id();
             $table->String('name', 40);
             $table->String('image');
+            $table->integer('pollResult');
             $table->timestamps();
         });
     }
