@@ -15,11 +15,11 @@ class partiesTableSeeder extends Seeder
     public function run()
     {
         DB::table('parties')->insert([
-            ['name'=>'Act','image'=>'img\act.jpg'],
-            ['name'=>'Green', 'image'=>'img\green.jpg'],
-            ['name'=>'Labour', 'image'=>'img\labour.jpg'],
-            ['name'=>'National', 'image'=>'img\national.jpg'],
-            ['name'=>'NZFirst', 'image'=>'img\nzfirst.jpg'],
+            ['name'=>'Act','image'=>'img\act.jpg', 'pollResult'=>1],
+            ['name'=>'Green', 'image'=>'img\green.jpg', 'pollResult'=>2],
+            ['name'=>'Labour', 'image'=>'img\labour.jpg', 'pollResult'=>3],
+            ['name'=>'National', 'image'=>'img\national.jpg', 'pollResult'=>4],
+            ['name'=>'NZFirst', 'image'=>'img\nzfirst.jpg', 'pollResult'=>5],
         ]);
     }
 }

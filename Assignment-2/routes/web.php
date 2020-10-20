@@ -14,7 +14,8 @@ use App\Http\Controllers;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\PoliticianController@index');
-Route::get('/home', 'App\Http\Controllers\PoliticianController@home');
-Route::get('/display', 'App\Http\Controllers\PoliticianController@display');
-Route::post('/search', 'App\Http\Controllers\PoliticianController@process');
+// Route::get('/', 'App\Http\Controllers\PoliticianController@index');
+// Route::get('/home', 'App\Http\Controllers\PoliticianController@home');
+// Route::get('/display', 'App\Http\Controllers\PoliticianController@display');
+// Route::post('/search', 'App\Http\Controllers\PoliticianController@process');
+Route::resource('', 'App\Http\Controllers\PoliticianController');

@@ -9,33 +9,86 @@ use Illuminate\Support\Facades\DB;
 
 class PoliticianController extends Controller
 {
-    public function home() {
-        return view('home');
-    }
-
-    public function index() {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
         $politicians = Politician::all();
         $parties = Party::all();
 
         return view('display', compact('politicians', 'parties'));
     }
 
-    public function process() {
-        $parties = Party::all();
-        $formData = request()->all();
-
-        if ($formData['partyDrop'] == 0 ) {
-            $politicians = Politician::orderBy('party_id')->get();
-        }
-        else {
-            $party = Party::where('id', $formData['partyDrop'])->first();
-            $parties_id = $party->id;
-            $politicians = Politician::where('party_id', $parties_id)->orderBy('name')->get();
-        }
-        return view('display', compact('politicians', 'parties'));
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //return view('create');
     }
 
-    public function display() {
-        return view('display');
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $politicians = Politician::find($id);
+        return view('show', compact('politicians'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        // $politicians = Politician::find($id);
+        // return view('edit', compact('politicians'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        // $politicians = Politician::find($id);
+        // $politicians->delete();
+        // return redirect('display');
     }
 }

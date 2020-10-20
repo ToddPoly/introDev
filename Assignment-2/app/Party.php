@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Party extends Model
 {
-    protected $fillable = ['name', 'image'];
+    protected $fillable = ['name', 'image', 'pollResult'];
     public function politician() {
         return $this->hasMany('App\Politician');
     }
